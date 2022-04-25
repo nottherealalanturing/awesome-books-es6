@@ -1,3 +1,5 @@
+const siteDate = document.querySelector('#time');
+
 const Time = () => {
   const date = new Date();
   const locale = navigator.language;

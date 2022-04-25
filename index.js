@@ -1,18 +1,12 @@
-import Library from './modules/Library';
-import navigate from './modules/SPA-navigation';
-import time from './modules/Time';
+import Library from './modules/Library.js';
+import navigate from './modules/SPA-navigation.js';
+import time from './modules/Time.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-  const bookSection = document.querySelector('.book-list');
   const bookTitle = document.querySelector('#title');
   const bookAuthor = document.querySelector('#author');
   const addBtn = document.querySelector('#submit');
   const navItems = Array.from(document.querySelectorAll('.links')[0].children);
-  const bookList = document.querySelector('.book-list');
-  const header = document.querySelector('.header');
-  const newBook = document.querySelector('.add-new');
-  const contact = document.querySelector('.contact-section');
-  const siteDate = document.querySelector('#time');
 
   const myLibrary = new Library();
 

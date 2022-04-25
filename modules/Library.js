@@ -1,15 +1,17 @@
+const bookSection = document.querySelector('.book-list');
+
 export default class Library {
   constructor() {
     this.library = JSON.parse(localStorage.getItem('book-collection')) || [];
   }
 
-  addBook(bookTitle, bookAuthor) {
+  addBook = (bookTitle, bookAuthor) => {
     const selectedBook = { title: bookTitle.value, author: bookAuthor.value };
     this.library.push(selectedBook);
     this.createBook();
-  }
+  };
 
-  createBook() {
+  createBook = () => {
     bookSection.innerHTML = '';
     for (let i = 0; i < this.library.length; i += 1) {
       const bookContainer = document.createElement('div');
@@ -28,9 +30,9 @@ export default class Library {
       bookSection.appendChild(bookContainer);
     }
     this.deleteBook();
-  }
+  };
 
-  deleteBook() {
+  deleteBook = () => {
     [...document.querySelectorAll('.deletebtn')].forEach((element) => {
       const elementIndex = parseInt(element.getAttribute('data'), 10);
       element.addEventListener('click', () => {
@@ -39,5 +41,5 @@ export default class Library {
         this.createBook();
       });
     });
-  }
+  };
 }

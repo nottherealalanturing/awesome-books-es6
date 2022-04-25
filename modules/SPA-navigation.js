@@ -1,3 +1,8 @@
+const bookList = document.querySelector('.book-list');
+const contact = document.querySelector('.contact-section');
+const header = document.querySelector('.header');
+const newBook = document.querySelector('.add-new');
+
 const navigateSPA = (key) => {
   switch (key) {
     case 'list':
