@@ -52,12 +52,6 @@ See the [open issues](git@github.com:nottherealalanturing/awesome-books-es6/issu
 
 👤 **Author1**
 
-- GitHub: [@frank1738](https://github.com/frank1738)
-- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
-- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
-
-👤 **Author2**
-
 - GitHub: [@nottherealalanturing](https://github.com/nottherealalanturing)
 - Twitter: [@assadeesaa](https://twitter.com/assadeesaa)
 - LinkedIn: [Assad Isah](https://linkedin.com/in/Assadisah)
