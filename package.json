@@ -1,7 +1,12 @@
 {
-  "name": "awesome-books(es6)",
+  "name": "awesome-books-es6",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Assad Isah <nottherealalanturing@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint-css": "npx stylelint \"**/*.{css,scss}",
+    "lint-html": "npx hint .",
+    "lint-js": "npx eslint ."
+  }
 }
