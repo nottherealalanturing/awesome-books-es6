@@ -1,6 +1,6 @@
 import Library from './modules/Library.js';
 import navigate from './modules/SPA-navigation.js';
-import time from './modules/Time.js';
+import { DateTime } from './modules/luxon.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const bookTitle = document.querySelector('#title');
@@ -29,5 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  setInterval(time, 1000);
+  setInterval(() => {
+    const date = document.querySelector('#time');
+    date.textContent = DateTime.utc().toLocaleString(DateTime.DATETIME_FULL);
+  }, 1000);
 });
