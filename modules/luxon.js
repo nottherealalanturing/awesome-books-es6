@@ -1,3 +1,4 @@
+/* eslint-disable */
 // these aren't really private, but nor are they really useful to document
 
 /**
@@ -7000,3 +7001,4 @@ const VERSION = "2.3.2";
 
 export { DateTime, Duration, FixedOffsetZone, IANAZone, Info, Interval, InvalidZone, Settings, SystemZone, VERSION, Zone };
 //# sourceMappingURL=luxon.js.map
+/* eslint-enable */
