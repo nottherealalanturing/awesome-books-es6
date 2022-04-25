@@ -2,11 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Awesome Books</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
   </head>
   <body>
-    <script src="./index.js"></script>
+    <nav class="navigation">
+      <h1 class="nav-header">Awesome Books</h1>
+      <ul class="links">
+        <li class="link-item" id="list">
+          <a>List</a>
+        </li>
+        <li class="link-item" id="add-new">
+          <a>Add new</a>
+        </li>
+        <li class="link-item" id="contact-section">
+          <a>Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="date">
+      <p id="time">April 20 2022, 1:20:32 PM</p>
+    </div>
+    <div class="books-container">
+      <h2 class="header">All Awesome Books</h2>
+      <section class="book-list"></section>
+    </div>
+    <form class="add-new hide">
+      <h2>Add a new book</h2>
+      <input type="text" id="title" placeholder="Enter book title" />
+      <input type="text" id="author" placeholder="Enter author" />
+      <input type="submit" id="submit" value="Add" />
+    </form>
+    <section id="contact" class="contact-section hide contact-information">
+      <h2 class="contact-header">Contact information</h2>
+      <p class="question">
+        Do you have any questions or just want to say "Hello"?
+      </p>
+      <p class="question">You can reach out to us !</p>
+      <ul class="contact-list">
+        <li class="contact-us">Our email awesomebooks@gmail.com</li>
+        <li class="contact-us">Our phone number +255598089877</li>
+        <li class="contact-us">Our Address 46546 San Diego</li>
+      </ul>
+      <footer class="footer">Copyright @awesome books 2022</footer>
+    </section>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
