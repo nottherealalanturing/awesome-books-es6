@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](git@github.com:nottherealalanturing/awesome-books-es6)
+[Live Demo Link](https://nottherealalanturing.github.io/awesome-books-es6/)
 
 ## Getting Started
 
